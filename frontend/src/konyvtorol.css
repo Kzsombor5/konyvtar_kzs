@@ -1,0 +1,43 @@
+
+.konyvtorles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 80vh;
+    padding: 2rem;
+    background-color: #eef2f7; 
+}
+
+.konyvtorles-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.konyvtorles-container .alert {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.konyvtorles-container .list-group {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.konyvtorles-container .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+
+.konyvtorles-container .list-group-item button {
+    min-width: 80px;
+}
