@@ -29,6 +29,26 @@ app.get('/konyvek', (req, res) => {
 });
 
 
+app.post('/ujkonyv', (req, res) => {
+    const { szerzo, cim , mufaj} = req.body;
+    const sql = `INSERT INTO konyvek (szerzo, cim, mufaj) VALUES (?, ?, ?)`;
+    db.query(sql, [szerzo, cim , mufaj], (err, results) => {
+        if (err) return res.status(500).send(err);
+        res.status(201).json({ id: results.insertId, szerzo, cim , mufaj });
+    });
+});
+
+
+app.delete('/konyvtorles/:id', (req, res) => {
+    const { id } = req.params;
+    const sql = `DELETE FROM konyvek WHERE konyv_id = ?`;
+    db.query(sql, [id], (err, results) => {
+        if (err) return res.status(500).send(err);
+        res.status(204).send();
+    });
+});
+  
+
 
 
 
