@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1:3307
--- Létrehozás ideje: 2025. Dec 09. 10:25
+-- Létrehozás ideje: 2025. Dec 09. 14:44
 -- Kiszolgáló verziója: 10.4.28-MariaDB
 -- PHP verzió: 8.2.4
 
@@ -65,7 +65,8 @@ INSERT INTO `konyvek` (`konyv_id`, `szerzo`, `cim`, `mufaj`) VALUES
 (2, 'George Orwell', '1984', 'Disztópia'),
 (3, 'J. R. R. Tolkien', 'A Gyűrűk Ura', 'Fantasy'),
 (4, 'Fekete István', 'Tüskevár', 'Ifjúsági'),
-(5, 'Agatha Christie', 'Tíz kicsi néger', 'Krimi');
+(5, 'Agatha Christie', 'Tíz kicsi néger', 'Krimi'),
+(11, 'Én :D', 'Jaj de jó', 'Mese');
 
 -- --------------------------------------------------------
 
@@ -129,7 +130,7 @@ ALTER TABLE `kolcsonzes`
 -- AUTO_INCREMENT a táblához `konyvek`
 --
 ALTER TABLE `konyvek`
-  MODIFY `konyv_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `konyv_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT a táblához `konyvek_kolcsonzes`
